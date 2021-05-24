@@ -1,0 +1,21 @@
+.portfolio-buttons-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-buttons-list__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.portfolio-buttons-list__button {
+  @extend %button;
+
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
