@@ -5,11 +5,19 @@
 }
 
 %container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 }
 
 %logo {
@@ -18,12 +26,12 @@
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-%underline {
+@mixin underline() {
   content: '';
   position: absolute;
 
@@ -54,11 +62,10 @@
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
-  width: 1600px;
 }
 
 .accent {

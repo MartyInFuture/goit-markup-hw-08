@@ -1,5 +1,9 @@
 .what-we-do {
   @extend %section;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .what-we-do__container {
   @extend %container;

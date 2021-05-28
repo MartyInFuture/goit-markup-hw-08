@@ -8,11 +8,12 @@
 
 .our-adventages__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 
 .our-adventages__item {
-  width: 270px;
+  width: 100%;
+  text-align: center;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -24,7 +25,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
 
@@ -44,4 +45,5 @@
 .our-adventages__text {
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 30px;
 }
