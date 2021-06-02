@@ -14,50 +14,96 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/portfolio.min.css" />
-    <title lang="en">Homework 7</title>
+    <title lang="en">Homework 8</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <nav class="site-nav flex">
-          <a href="./index.html" class="site-nav__logo"
-            ><spnan class="accent">Web</spnan>Studio</a
-          >
-          <ul class="site-nav__pages-link flex">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link"
-                ><span class="site-nav__underline">Портфолио</span></a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="/" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="site-nav-contacts flex">
-          <li class="site-nav-contacts__item">
-            <svg class="site-nav-contacts__icon" width="16px" height="12px">
-              <use href="./images/icons.svg#email"></use>
-            </svg>
-            <a
-              href="mailto:info@devstudio.com"
-              class="site-nav-contacts__link flex"
-            >
-              <span>info@devstudio.com</span></a
-            >
-          </li>
-          <li class="site-nav-contacts__item">
-            <svg class="site-nav-contacts__icon" width="16px" height="16px">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-            <a href="tel:+380961111111" class="site-nav-contacts__link flex">
-              <span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
+        <a href="./index.html" class="site-nav__logo"
+          ><spnan class="accent">Web</spnan>Studio</a
+        >
+        <button class="header__mobile-menu-open" data-menu-open>
+          <svg class="header__open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#mobile-menu-icon"></use>
+          </svg>
+        </button>
+        <div class="header__menu-wrapper" data-menu>
+          <div class="header__mobile-container">
+            <button class="header__close-button" data-menu-close>
+              <svg class="header__close-icon" width="40px" height="40px">
+                <use href="./images/icons.svg#mobile-menu-close-icon"></use>
+              </svg>
+            </button>
+            <nav class="site-nav">
+              <ul class="site-nav__pages-link">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link">Студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link"
+                    ><span class="site-nav__underline">Портфолио</span></a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a href="/" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="site-nav-contacts">
+              <li class="site-nav-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="site-nav-contacts__link"
+                >
+                  <svg
+                    class="site-nav-contacts__icon"
+                    width="16px"
+                    height="12px"
+                  >
+                    <use href="./images/icons.svg#email"></use>
+                  </svg>
+                  <span
+                    class="
+                      site-nav-contacts__link-text site-nav-contacts__email
+                    "
+                    >info@devstudio.com</span
+                  ></a
+                >
+              </li>
+              <li class="site-nav-contacts__item">
+                <a href="tel:+380961111111" class="site-nav-contacts__link">
+                  <svg
+                    class="site-nav-contacts__icon"
+                    width="16px"
+                    height="16px"
+                  >
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                  <span
+                    class="
+                      site-nav-contacts__link-text site-nav-contacts__phone
+                    "
+                    >+38 096 111 11 11</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="header-social-list">
+              <li class="header-social-list__item">
+                <a href="" class="header-social-list__link">Instagram</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="" class="header-social-list__link">Twitter</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="" class="header-social-list__link">Facebook</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="" class="header-social-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -93,125 +139,135 @@
           </ul>
           <ul class="portfolio-works-list">
             <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/techduck.jpg"
-                  alt="Открытый сайт на ноутбуке"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Reiciendis quas quidem libero eligendi sequi ab laboriosam
-                    molestiae animi reprehenderit laborum quia vitae commodi
-                    dolores, voluptas consequuntur blanditiis dolore nobis
-                    dignissimos.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Технокряк</h2>
-                <p class="portfolio-works-list__text">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/poster-new-orlean-vs-golden-star.jpg"
-                  alt="Постер с двумя баскетболистами"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod quaerat harum consequuntur culpa modi. Pariatur esse
-                    hic unde, saepe assumenda consequatur nobis reprehenderit
-                    quidem! Iure dolores quibusdam praesentium consectetur in!
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-works-list__text">Дизайн</p>
-              </div>
-            </li>
-            <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/restaurant-seafood.jpg"
-                  alt="Логотип ресторана"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Voluptatum tempore repudiandae, temporibus voluptate
-                    reprehenderit placeat explicabo vitae atque numquam.
-                    Explicabo nulla quisquam reprehenderit! Adipisci tenetur
-                    ducimus dolore repellat similique repellendus!
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Ресторан Seafood</h2>
-                <p class="portfolio-works-list__text">Приложение</p>
-              </div>
-            </li>
-            <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/project-prime.jpg"
-                  alt="Полноразмерные наушники"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse consectetur natus inventore corporis veritatis debitis
-                    sed earum voluptatem odit. A reiciendis temporibus similique
-                    dolores voluptates qui blanditiis aliquam excepturi
-                    doloribus.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Проект Prime</h2>
-                <p class="portfolio-works-list__text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/project-boxes.jpg"
-                  alt="Две коробки"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum ipsa sunt quae doloremque ipsum vel officia minima,
-                    minus esse autem hic illo iste blanditiis magnam maxime
-                    dolor debitis impedit facere?
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Проект Boxes</h2>
-                <p class="portfolio-works-list__text">Приложение</p>
-              </div>
-            </li>
-            <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
+              <a class="portfolio-works-list__link" href="">
                 <div class="portfolio-works-list__image-wrapper">
                   <img
-                    class="block"
+                    class="portfolio-works-list__image"
+                    src="./images/techduck.jpg"
+                    alt="Открытый сайт на ноутбуке"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Reiciendis quas quidem libero eligendi sequi ab laboriosam
+                      molestiae animi reprehenderit laborum quia vitae commodi
+                      dolores, voluptas consequuntur blanditiis dolore nobis
+                      dignissimos.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Технокряк</h2>
+                  <p class="portfolio-works-list__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-works-list__item">
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/poster-new-orlean-vs-golden-star.jpg"
+                    alt="Постер с двумя баскетболистами"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quod quaerat harum consequuntur culpa modi. Pariatur esse
+                      hic unde, saepe assumenda consequatur nobis reprehenderit
+                      quidem! Iure dolores quibusdam praesentium consectetur in!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-works-list__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-works-list__item">
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/restaurant-seafood.jpg"
+                    alt="Логотип ресторана"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptatum tempore repudiandae, temporibus voluptate
+                      reprehenderit placeat explicabo vitae atque numquam.
+                      Explicabo nulla quisquam reprehenderit! Adipisci tenetur
+                      ducimus dolore repellat similique repellendus!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Ресторан Seafood</h2>
+                  <p class="portfolio-works-list__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-works-list__item">
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/project-prime.jpg"
+                    alt="Полноразмерные наушники"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Esse consectetur natus inventore corporis veritatis
+                      debitis sed earum voluptatem odit. A reiciendis temporibus
+                      similique dolores voluptates qui blanditiis aliquam
+                      excepturi doloribus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Проект Prime</h2>
+                  <p class="portfolio-works-list__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-works-list__item">
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/project-boxes.jpg"
+                    alt="Две коробки"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Nostrum ipsa sunt quae doloremque ipsum vel officia
+                      minima, minus esse autem hic illo iste blanditiis magnam
+                      maxime dolor debitis impedit facere?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Проект Boxes</h2>
+                  <p class="portfolio-works-list__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-works-list__item">
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
                     src="./images/inspiration-has-no-borders.jpg"
                     alt="Моноблок с открытым сайтом"
                     width="370"
@@ -226,82 +282,89 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">
-                  Inspiration has no Borders
-                </h2>
-                <p class="portfolio-works-list__text">Веб-сайт</p>
-              </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-works-list__text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/limited-edition.jpg"
-                  alt="Разворот журнала"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vero iste perspiciatis facere consequatur cupiditate dolorum
-                    incidunt consequuntur debitis accusamus vitae dolores
-                    nesciunt, culpa inventore cumque adipisci ullam nobis
-                    quisquam sapiente.
-                  </p>
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/limited-edition.jpg"
+                    alt="Разворот журнала"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero iste perspiciatis facere consequatur cupiditate
+                      dolorum incidunt consequuntur debitis accusamus vitae
+                      dolores nesciunt, culpa inventore cumque adipisci ullam
+                      nobis quisquam sapiente.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">
-                  Издание Limited Edition
-                </h2>
-                <p class="portfolio-works-list__text">Дизайн</p>
-              </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="portfolio-works-list__text">Дизайн</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/project-lab.jpg"
-                  alt="Бирка"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Architecto odio ipsa nostrum debitis qui explicabo quod
-                    ratione reprehenderit quisquam totam, perferendis asperiores
-                    libero tempora, dolores delectus atque aut. A, impedit.
-                  </p>
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/project-lab.jpg"
+                    alt="Бирка"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Architecto odio ipsa nostrum debitis qui explicabo quod
+                      ratione reprehenderit quisquam totam, perferendis
+                      asperiores libero tempora, dolores delectus atque aut. A,
+                      impedit.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Проект LAB</h2>
-                <p class="portfolio-works-list__text">Маркетинг</p>
-              </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Проект LAB</h2>
+                  <p class="portfolio-works-list__text">Маркетинг</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio-works-list__item">
-              <div class="portfolio-works-list__image-wrapper">
-                <img
-                  class="block"
-                  src="./images/growing-business.jpg"
-                  alt="Человек работающий за ноутбуком"
-                  width="370"
-                />
-                <div class="portfolio-works-list__text-wrapper">
-                  <p class="portfolio-works-list__hover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis hic, nulla ad, nihil commodi iusto beatae rerum
-                    necessitatibus sunt illo fuga earum eos ipsa omnis quis
-                    dolor voluptate in perferendis.
-                  </p>
+              <a class="portfolio-works-list__link" href="">
+                <div class="portfolio-works-list__image-wrapper">
+                  <img
+                    class="portfolio-works-list__image"
+                    src="./images/growing-business.jpg"
+                    alt="Человек работающий за ноутбуком"
+                    width="370"
+                  />
+                  <div class="portfolio-works-list__text-wrapper">
+                    <p class="portfolio-works-list__hover-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis hic, nulla ad, nihil commodi iusto beatae rerum
+                      necessitatibus sunt illo fuga earum eos ipsa omnis quis
+                      dolor voluptate in perferendis.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="portfolio-works-list__item-context">
-                <h2 class="portfolio-works-list__title">Growind Business</h2>
-                <p class="portfolio-works-list__text">Приложение</p>
-              </div>
+                <div class="portfolio-works-list__item-context">
+                  <h2 class="portfolio-works-list__title">Growind Business</h2>
+                  <p class="portfolio-works-list__text">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -326,8 +389,8 @@
         <div class="social-container">
           <h2 class="social-container__title">Присоединяйтесь</h2>
           <ul class="social-list">
-            <li class="social-list__item social-list__item--footer">
-              <a href="" class="social-list__link"
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link--footer"
                 ><svg
                   class="social-list__icon social-list__icon--footer"
                   width="20px"
@@ -337,8 +400,8 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--footer">
-              <a href="" class="social-list__link"
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link--footer"
                 ><svg
                   class="social-list__icon social-list__icon--footer"
                   width="20px"
@@ -348,8 +411,8 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--footer">
-              <a href="" class="social-list__link"
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link--footer"
                 ><svg
                   class="social-list__icon social-list__icon--footer"
                   width="20px"
@@ -359,8 +422,8 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--footer">
-              <a href="" class="social-list__link"
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link--footer"
                 ><svg
                   class="social-list__icon social-list__icon--footer"
                   width="20px"
@@ -385,5 +448,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

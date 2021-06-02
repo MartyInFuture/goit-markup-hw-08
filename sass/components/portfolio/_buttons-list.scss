@@ -2,8 +2,16 @@
   @extend %list;
 
   display: flex;
+  // flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and(max-width: 767px) {
+    min-height: 91px;
+    align-content: space-between;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
 }
 .portfolio-buttons-list__item {
   &:not(:last-child) {

@@ -1,8 +1,8 @@
 // footer styles
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  @extend %section;
   text-align: center;
 
   font-size: 14px;
@@ -10,16 +10,39 @@
 
   background-color: $secondary-background-color;
   color: $main-background-color;
+
+  @media screen and(min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__container {
   @extend %container;
-  // display: flex;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 // address styles
 
 .address {
-  // margin-right: 70px;
+  width: 232px;
+
+  @media screen and(max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .address__logo {
@@ -42,15 +65,25 @@
 
   transition: color 250ms $cubic;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
 
 // social styles
 .social-container {
-  // margin-right: 93px;
-  margin-top: 60px;
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and(min-width: 768px) {
+    margin-top: 5px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 
 .social-container__title {
@@ -62,7 +95,7 @@
   line-height: 1.17;
 }
 
-.social-list__item--footer {
+.social-list__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -73,6 +106,16 @@
 // subscribe section
 .subscribe {
   margin-top: 60px;
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 570px;
+    margin-top: 12px;
+  }
 }
 
 .subscribe__title {
@@ -82,6 +125,13 @@
 
   font-size: 14px;
   line-height: 1.17;
+}
+
+.subscribe__form {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .subscribe__email-input {
@@ -97,6 +147,15 @@
 
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and(min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 
 .subscribe__button {

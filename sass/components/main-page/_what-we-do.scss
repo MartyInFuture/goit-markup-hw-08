@@ -1,7 +1,8 @@
 .what-we-do {
   @extend %section;
+  padding-top: 0px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -32,7 +33,7 @@
   }
 }
 
-.what-we-do__inage {
+.what-we-do__image {
   display: block;
 }
 
