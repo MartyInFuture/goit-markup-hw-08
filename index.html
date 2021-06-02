@@ -22,9 +22,13 @@
         <a href="./index.html" class="site-nav__logo"
           ><spnan class="accent">Web</spnan>Studio</a
         >
-
-        <div class="header__menu-wrapper header__modile-menu">
-          <button class="header__close-button">
+        <button class="header__mobile-menu-close" data-menu-open>
+          <svg class="header__open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#mobile-menu-icon"></use>
+          </svg>
+        </button>
+        <div class="header__menu-wrapper" data-menu>
+          <button class="header__close-button" data-menu-close>
             <svg class="header__close-icon" width="40px" height="40px">
               <use href="./images/icons.svg#mobile-menu-close-icon"></use>
             </svg>
@@ -51,7 +55,7 @@
               </svg>
               <a
                 href="mailto:info@devstudio.com"
-                class="site-nav-contacts__link"
+                class="site-nav-contacts__link site-nav-contacts__email"
               >
                 <span>info@devstudio.com</span></a
               >
@@ -60,7 +64,10 @@
               <svg class="site-nav-contacts__icon" width="16px" height="16px">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
-              <a href="tel:+380961111111" class="site-nav-contacts__link flex">
+              <a
+                href="tel:+380961111111"
+                class="site-nav-contacts__link site-nav-contacts__phone"
+              >
                 <span>+38 096 111 11 11</span></a
               >
             </li>
@@ -541,5 +548,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

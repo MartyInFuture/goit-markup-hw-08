@@ -1,7 +1,6 @@
 // container
 .header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
@@ -13,7 +12,7 @@
 
 // mobile menu
 
-.header__menu-wrapper.header__modile-menu {
+.header__menu-wrapper {
   position: fixed;
   padding: 48px 40px;
   top: 0;
@@ -21,6 +20,14 @@
   width: 100%;
   height: 100%;
   background-color: $main-background-color;
+
+  z-index: 999;
+
+  transform: translateX(-100%);
+}
+
+.header__menu-wrapper.header__mobile-menu {
+  transform: translateX(0);
 }
 
 .header__close-button {
@@ -35,6 +42,36 @@
   background-color: $main-background-color;
 
   cursor: pointer;
+}
+
+.header__mobile-menu-close {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  // position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  background-color: $main-background-color;
+
+  cursor: pointer;
+}
+
+.header__open-icon {
+  transition: fill 250ms $cubic;
+}
+
+.header__open-icon:hover {
+  fill: $accent-color;
+}
+
+.header__close-icon {
+  transition: fill 250ms $cubic;
+}
+
+.header__close-icon:hover {
+  fill: $accent-color;
 }
 
 // site-nav
@@ -65,6 +102,7 @@
 
 .site-nav__link {
   // display: inline-block;
+  font-size: 40px;
   padding-bottom: 32px;
   padding-top: 32px;
 
@@ -89,8 +127,6 @@
 }
 
 .site-nav-contacts__item {
-  position: relative;
-
   fill: $main-text-color;
 
   transition: color 250ms $cubic, fill 250ms $cubic;
@@ -106,13 +142,28 @@
 }
 
 .site-nav-contacts__link {
-  padding-left: 26px;
-  // display: inline-block;
-  position: relative;
-  align-items: center;
+  // padding-left: 26px;
+}
+
+.site-nav-contacts__phone {
+  position: absolute;
+  bottom: 194px;
+  left: 40px;
+  font-size: 34px;
+}
+
+.site-nav-contacts__email {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+
+  font-size: 24px;
 }
 
 .site-nav-contacts__icon {
+  @media screen and (max-width: 767px) {
+    @include visually-hidden();
+  }
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
