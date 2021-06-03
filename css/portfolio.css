@@ -800,7 +800,7 @@ a {
 
 .portfolio-works-list__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .portfolio-works-list__text-wrapper {

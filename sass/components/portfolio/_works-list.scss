@@ -45,7 +45,8 @@
 
 .portfolio-works-list__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  // height: auto;
 }
 .portfolio-works-list__text-wrapper {
   display: flex;
