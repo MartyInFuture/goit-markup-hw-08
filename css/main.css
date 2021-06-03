@@ -1175,11 +1175,32 @@ a {
           transform: scale(1.1);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    margin: 94px 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 20px;
+    height: 500px;
+  }
+}
+
 .modal__title {
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.18;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    text-align: center;
+  }
 }
 
 .modal__close-button {
@@ -1266,6 +1287,12 @@ a {
   color: rgba(46, 46, 46, 0.5);
 }
 
+@media screen and (max-width: 479px) {
+  .modal-form__comment {
+    height: 41px;
+  }
+}
+
 .modal-form__agreement-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1283,6 +1310,13 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__agreement-label {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+  }
 }
 
 .modal-form__agreement-link {
