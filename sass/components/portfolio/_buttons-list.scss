@@ -6,13 +6,13 @@
   justify-content: center;
   margin-bottom: 50px;
 
-  @media screen and(max-width: 390px) {
+  @media screen and(max-width: 389px) {
     height: 156px;
     align-content: space-between;
     justify-content: left;
     flex-wrap: wrap;
   }
-  @media screen and(min-width: 391px) and(max-width: 767px) {
+  @media screen and(min-width: 390px) and(max-width: 767px) {
     min-height: 91px;
     align-content: space-between;
     justify-content: left;

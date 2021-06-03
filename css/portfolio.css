@@ -735,7 +735,7 @@ a {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 389px) {
   .portfolio-buttons-list {
     height: 156px;
     -ms-flex-line-pack: justify;
@@ -748,7 +748,7 @@ a {
   }
 }
 
-@media screen and (min-width: 391px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
   .portfolio-buttons-list {
     min-height: 91px;
     -ms-flex-line-pack: justify;
