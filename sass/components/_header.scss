@@ -239,6 +239,10 @@
 
     color: $accent-color;
   }
+
+  @media screen and(max-width: 364px) {
+    font-size: 28px;
+  }
 }
 
 .site-nav-contacts__email {
@@ -278,11 +282,19 @@
 .header-social-list {
   @extend %list;
   display: flex;
+
   position: absolute;
   bottom: 48px;
-
+  left: 40px;
+  right: 40px;
   @media screen and(min-width: 768px) {
     display: none;
+  }
+
+  @media screen and(max-width: 440px) {
+    height: 62px;
+    align-content: space-between;
+    flex-wrap: wrap;
   }
 }
 

@@ -5,6 +5,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../../../images/hero/bg-mobile.jpg');
+  background-size: cover;
   @media (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient(
@@ -24,6 +25,7 @@
           rgba(47, 48, 58, 0.4)
         ),
         url('../../../images/hero/bg-tablet.jpg');
+      background-size: contain;
     }
     @media (min-resolution: 2dppx) {
       & {
@@ -33,6 +35,7 @@
             rgba(47, 48, 58, 0.4)
           ),
           url('../../../images/hero/bg-tablet@2x.jpg');
+        background-size: cover;
       }
     }
   }
@@ -45,6 +48,7 @@
           rgba(47, 48, 58, 0.4)
         ),
         url('../../../images/hero/bg-desktop.jpg');
+      background-size: cover;
     }
     @media (min-resolution: 2dppx) {
       & {
@@ -54,6 +58,7 @@
             rgba(47, 48, 58, 0.4)
           ),
           url('../../../images/hero/bg-desktop@2x.jpg');
+        background-size: cover;
       }
     }
   }

@@ -76,6 +76,11 @@
   line-height: 1.88;
 
   color: $main-background-color;
+
+  @media screen and(max-width: 380px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 .portfolio-works-list__item-context {
   border: 1px solid #eeeeee;

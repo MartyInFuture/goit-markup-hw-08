@@ -180,6 +180,10 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__image"
+                srcset="
+                  ./images/what-we-do/wedo1.jpg   1x,
+                  ./images/what-we-do/wedo1x2.jpg 2x
+                "
                 src="./images/what-we-do/wedo1.jpg"
                 width="370"
                 alt="developer is codding"
@@ -191,6 +195,10 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__image"
+                srcset="
+                  ./images/what-we-do/wedo2.jpg   1x,
+                  ./images/what-we-do/wedo2x2.jpg 2x
+                "
                 src="./images/what-we-do/wedo2.jpg"
                 width="370"
                 alt="layout designer is working"
@@ -202,6 +210,10 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__image"
+                srcset="
+                  ./images/what-we-do/wedo3.jpg   1x,
+                  ./images/what-we-do/wedo3x2.jpg 2x
+                "
                 src="./images/what-we-do/wedo3.jpg"
                 width="370"
                 alt="designer is working"
@@ -218,11 +230,36 @@
           <h2 class="our-team__main-title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item">
-              <img
-                src="./images/our-team/product-designer.jpg"
-                alt="product-designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desk-prod-designer.jpg   1x,
+                    ./images/our-team/desk-prod-designer2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet-prod-designer.jpg   1x,
+                    ./images/our-team/tablet-prod-designer2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/mobile-prod-designer.jpg   1x,
+                    ./images/our-team/mobile-prod-designer2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/our-team/mobile-prod-designer.jpg"
+                  alt="product-designer"
+                />
+              </picture>
               <h3 class="our-team__title">Игорь Демьяненко</h3>
               <p class="our-team__text">Product Designer</p>
               <ul class="social-list">
@@ -261,11 +298,36 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/our-team/frontend-developer.jpg"
-                alt="frontend-developer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desk-front-dev.jpg   1x,
+                    ./images/our-team/desk-front-dev2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet-front-dev.jpg   1x,
+                    ./images/our-team/tablet-front-dev2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/mobile-front-dev.jpg   1x,
+                    ./images/our-team/mobile-front-dev2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/our-team/mobile-front-dev.jpg"
+                  alt="frontend-developer"
+                />
+              </picture>
 
               <h3 class="our-team__title">Ольга Репина</h3>
               <p class="our-team__text">Frontend Developer</p>
@@ -305,11 +367,36 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/our-team/marketing.jpg"
-                alt="marketing"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desk-marketing.jpg   1x,
+                    ./images/our-team/desk-marketing2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet-marketing.jpg   1x,
+                    ./images/our-team/tablet-marketing2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/mobile-marketing.jpg   1x,
+                    ./images/our-team/mobile-marketing2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/our-team/mobile-marketing.jpg"
+                  alt="marketing"
+                />
+              </picture>
 
               <h3 class="our-team__title">Николай Тарасов</h3>
               <p class="our-team__text">Marketing</p>
@@ -349,11 +436,36 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/our-team/ui-designer.jpg"
-                alt="ui-designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desk-ux-designer.jpg   1x,
+                    ./images/our-team/desk-ux-designer2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tablet-ux-designer.jpg   1x,
+                    ./images/our-team/tablet-ux-designer2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/our-team/mobile-ux-designer.jpg   1x,
+                    ./images/our-team/mobile-ux-designer2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/our-team/mobile-ux-designer.jpg"
+                  alt="ui-designer"
+                />
+              </picture>
 
               <h3 class="our-team__title">Михаил Ермаков</h3>
               <p class="our-team__text">UI Designer</p>
