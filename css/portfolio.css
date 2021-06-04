@@ -539,6 +539,8 @@ a {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   font-size: 14px;
   line-height: 1.71;
@@ -732,7 +734,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 389px) {
@@ -758,6 +760,12 @@ a {
             justify-content: left;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons-list {
+    margin-bottom: 50px;
   }
 }
 
