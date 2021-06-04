@@ -204,6 +204,10 @@
     background-image: url('../images/icon-check.svg');
     background-origin: border-box;
   }
+
+  .modal-form__checkbox:focus + & {
+    border-color: $accent-color;
+  }
 }
 
 .modal-form__button {
