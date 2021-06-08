@@ -135,7 +135,8 @@
 .modal-form__comment {
   @extend .modal-form__input;
 
-  padding-left: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
   resize: none;
 
   &:placeholder-shown {
@@ -149,13 +150,10 @@
 
 .modal-form__agreement-wrapper {
   position: relative;
-  display: flex;
-  align-items: center;
-
-  margin-top: 20px;
 }
 
 .modal-form__agreement-label {
+  position: relative;
   display: inline-block;
   padding-left: 37px;
   font-size: 14px;
