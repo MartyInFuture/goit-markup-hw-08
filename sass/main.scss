@@ -1,10 +1,12 @@
 @import './index';
 
-// current page styles
+// components
+@import './components/modal';
 
-@import './components/main-page/hero';
-@import './components/main-page/our-adventages';
-@import './components/main-page/what-we-do';
-@import './components/main-page/our-team';
-@import './components/main-page/clients';
-@import './components/main-page/modal';
+// pages
+@import './pages/main-page/hero';
+@import './pages/main-page/our-adventages';
+@import './pages/main-page/what-we-do';
+@import './pages/main-page/our-team';
+@import './pages/main-page/clients';
+@import './pages/main-page/modal-form';

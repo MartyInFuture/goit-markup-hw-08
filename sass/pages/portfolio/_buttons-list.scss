@@ -1,6 +1,4 @@
 .portfolio-buttons-list {
-  @extend %list;
-
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -21,18 +19,15 @@
   @media screen and(min-width: 1200px) {
     margin-bottom: 50px;
   }
-}
-.portfolio-buttons-list__item {
-  &:not(:last-child) {
+
+  &__item:not(:last-child) {
     margin-right: 8px;
   }
-}
-.portfolio-buttons-list__button {
-  @extend %button;
+  .portfolio-buttons-list__button {
+    padding: 6px 22px;
 
-  padding: 6px 22px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+  }
 }

@@ -1,14 +1,4 @@
-.our-adventages {
-  @extend %section;
-}
-.our-adventages__container {
-  @extend %container;
-}
-
 .our-adventages__list {
-  @extend %list;
-  // display: flex;
-
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +42,7 @@
   height: 120px;
   border-radius: 4px;
 
-  background-color: $unactive-color;
+  background-color: var(--unactive-color);
 }
 
 .our-adventages__title {
@@ -62,7 +52,7 @@
   letter-spacing: 1.17;
   text-transform: uppercase;
 
-  color: $secondary-text-color;
+  color: var(--secondary-text-color);
 
   @media screen and(max-width: 767px) {
     text-align: center;

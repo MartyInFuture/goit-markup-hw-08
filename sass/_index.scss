@@ -1,6 +1,23 @@
+// variables
 @import './utils/variables';
-@import './base';
-@import './utils/common';
-@import './utils/social-list';
-@import './components/header';
-@import './components/footer';
+
+// base
+@import './base/base';
+@import './base/conatiner';
+@import './base/section';
+
+// utils
+@import './utils/utils-classes';
+
+// components
+@import './components/title';
+@import './components/logo';
+@import './components/underline';
+@import './components/button';
+@import './components/social-list';
+@import './components/site-nav';
+@import './components/site-nav-contacts';
+
+// layouts
+@import './layout/header';
+@import './layout/footer';

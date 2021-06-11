@@ -1,10 +1,12 @@
-$main-text-color: #757575;
-$secondary-text-color: #212121;
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
 
-$main-background-color: #ffffff;
-$secondary-background-color: #2f303a;
+  --main-white-color: #ffffff;
+  --secondary-background-color: #2f303a;
 
-$accent-color: #2196f3;
-$unactive-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --unactive-color: #f5f4fa;
 
-$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

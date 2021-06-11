@@ -79,7 +79,7 @@
 }
 .hero__title {
   margin-bottom: 30px;
-  color: #ffffff;
+  color: var(--main-white-color);
 
   text-transform: uppercase;
   font-weight: 900;
@@ -93,12 +93,10 @@
 }
 
 .hero__button {
-  @extend %button;
-
   padding: 10px 32px;
 
-  color: #ffffff;
-  background-color: $accent-color;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
