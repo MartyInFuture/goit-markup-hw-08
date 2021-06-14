@@ -440,8 +440,12 @@ img {
     min-height: 510px;
     background-color: var(--main-white-color);
     z-index: 999;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 250ms var(--cubic);
+    transition: -webkit-transform 250ms var(--cubic);
+    transition: transform 250ms var(--cubic);
+    transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
   }
 }
 
@@ -467,8 +471,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .header__menu-wrapper.header__mobile-menu {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
